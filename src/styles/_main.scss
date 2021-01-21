@@ -1,0 +1,56 @@
+.boxOffice,
+.rated,
+.watchlist {
+    gap: 10px;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, 245px);
+    text-align: center;
+
+    li {
+        margin: 15px 0;
+        position: relative;
+    }
+}
+
+.movie {
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0.20);
+    
+    &__info {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.7);
+        bottom: 0;
+        width: 100%;
+        border-radius: 0 0 6px 6px ;
+        padding: 5px;
+    }
+
+    .showDetails {
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 0 0 6px 6px ;
+        h3, 
+        p {
+            padding:  5px 10px;
+        }
+    }
+
+    img {
+        border-radius: 6px;
+        width: 225px;
+        height: 338px;
+    }
+}
+
+form {
+    color: black;
+    position: absolute;
+    top: 15px;
+    background-color: white;
+    height: 338px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
